@@ -701,12 +701,41 @@ document.addEventListener("DOMContentLoaded", function () {
                                                                                                                 robertoImage.style.transform = "translate(-50%, -50%)";
                                                                                                                 document.body.appendChild(robertoImage);
                                                                                                                 setTimeout(() => {
-                                                                                                                    robertoImage.style.transition = "right 5s ease";
-                                                                                                                    robertoImage.style.right = "50%";
-                                                                                                                }, 100);
-                                                                                                            }, 2000);
-                                                                                                        }, 2000);
-                                                                                                    }, 2000);
+                                                                                                                    robertoImage.style.transition = "right 8s ease";
+                                                                                                                    robertoImage.style.right = "12%";
+                                                                                                                    setTimeout(() => {
+                                                                                                                        robertoImage.src = "../images/FarWest/bar/roberto_charla1.png";
+                                                                                                                        javiImage.src = "../images/FarWest/bar/rosa/javi_rosa_heroe.png";
+                                                                                                                        setTimeout(() => {
+                                                                                                                            robertoImage.src = "../images/FarWest/bar/roberto_charla2.png";
+                                                                                                                            setTimeout(() => {
+                                                                                                                                javiDestructor.src = "../images/FarWest/bar/javi_destructor_php.png";
+                                                                                                                                setTimeout(() => {
+                                                                                                                                    const php = document.createElement("img");
+                                                                                                                                    php.src = "../images/FarWest/bar/php.png";
+                                                                                                                                    php.id = "php";
+                                                                                                                                    php.style.position = "absolute";
+                                                                                                                                    php.style.right = "12%";
+                                                                                                                                    php.style.top = "60%";
+                                                                                                                                    php.style.zIndex = "0";
+                                                                                                                                    php.style.height = "100px";
+                                                                                                                                    php.style.transform = "translate(-50%, -50%)";
+                                                                                                                                    document.body.appendChild(php);
+                                                                                                                                    setTimeout(() => {
+                                                                                                                                        php.style.transition = "left 10s ease";
+                                                                                                                                        php.style.left = "150%";
+                                                                                                                                        setTimeout(() => {
+                                                                                                                                            javiDestructor.src = "../images/FarWest/bar/javi_destructor.png";
+                                                                                                                                        }, 4000);
+                                                                                                                                    },2000);
+                                                                                                                                }, 4000);
+                                                                                                                            }, 4000);
+                                                                                                                        }, 4000);
+                                                                                                                    }, 4000);
+                                                                                                                }, 4000);
+                                                                                                            }, 4000);
+                                                                                                        }, 4000);
+                                                                                                    }, 4000);
                                                                                                 }, 2000);
                                                                                             }
                                                                                             newOptions.style.display = "none";
