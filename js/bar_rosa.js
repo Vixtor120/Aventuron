@@ -722,12 +722,12 @@ document.addEventListener("DOMContentLoaded", function () {
                                                                                                                                     php.style.transform = "translate(-50%, -50%)";
                                                                                                                                     document.body.appendChild(php);
                                                                                                                                     setTimeout(() => {
-                                                                                                                                        php.style.transition = "left 10s ease";
-                                                                                                                                        php.style.left = "150%";
-                                                                                                                                        setTimeout(() => {
-                                                                                                                                            javiDestructor.src = "../images/FarWest/bar/javi_destructor.png";
-                                                                                                                                        }, 4000);
-                                                                                                                                    },2000);
+                                                                                                                                        php.style.transition = "left 10s ease"; 
+                                                                                                                                        php.style.left = "150%"; 
+                                                                                                                                        php.addEventListener("transitionend", () => {
+                                                                                                                                            php.remove();
+                                                                                                                                        });
+                                                                                                                                    }, 2000);
                                                                                                                                 }, 4000);
                                                                                                                             }, 4000);
                                                                                                                         }, 4000);
