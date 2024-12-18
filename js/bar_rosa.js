@@ -256,6 +256,21 @@ document.addEventListener("DOMContentLoaded", function () {
                                                                                                                                                                                 javiImage.style.zIndex = "10";
                                                                                                                                                                                 setTimeout(() => {
                                                                                                                                                                                     javiImage.src = "../images/FarWest/bar/javi_profe_charla1.png";
+                                                                                                                                                                                    setTimeout(() => {
+                                                                                                                                                                                        const returnButton = document.createElement("button");
+                                                                                                                                                                                        returnButton.textContent = "Volver al inicio";
+                                                                                                                                                                                        returnButton.style.position = "absolute";
+                                                                                                                                                                                        returnButton.style.bottom = "10%";
+                                                                                                                                                                                        returnButton.style.left = "50%";
+                                                                                                                                                                                        returnButton.style.transform = "translateX(-50%)";
+                                                                                                                                                                                        returnButton.style.padding = "10px 20px";
+                                                                                                                                                                                        returnButton.style.fontSize = "16px";
+                                                                                                                                                                                        returnButton.style.cursor = "pointer";
+                                                                                                                                                                                        returnButton.addEventListener("click", () => {
+                                                                                                                                                                                            window.location.href = "../index.html";
+                                                                                                                                                                                        });
+                                                                                                                                                                                        document.body.appendChild(returnButton);
+                                                                                                                                                                                    }, 2000);
                                                                                                                                                                                 }, 4000);
                                                                                                                                                                             }, 2000);
                                                                                                                                                                         }, 100);
@@ -471,6 +486,21 @@ document.addEventListener("DOMContentLoaded", function () {
                                                                                                                                                                                 javiViejoImage.style.zIndex = "10";
                                                                                                                                                                                 setTimeout(() => {
                                                                                                                                                                                     javiViejoImage.src = "../images/FarWest/bar/javi_profe_charla1.png";
+                                                                                                                                                                                    setTimeout(() => {
+                                                                                                                                                                                        const returnButton = document.createElement("button");
+                                                                                                                                                                                        returnButton.textContent = "Volver al inicio";
+                                                                                                                                                                                        returnButton.style.position = "absolute";
+                                                                                                                                                                                        returnButton.style.bottom = "10%";
+                                                                                                                                                                                        returnButton.style.left = "50%";
+                                                                                                                                                                                        returnButton.style.transform = "translateX(-50%)";
+                                                                                                                                                                                        returnButton.style.padding = "10px 20px";
+                                                                                                                                                                                        returnButton.style.fontSize = "16px";
+                                                                                                                                                                                        returnButton.style.cursor = "pointer";
+                                                                                                                                                                                        returnButton.addEventListener("click", () => {
+                                                                                                                                                                                            window.location.href = "../index.html";
+                                                                                                                                                                                        });
+                                                                                                                                                                                        document.body.appendChild(returnButton);
+                                                                                                                                                                                    }, 2000);
                                                                                                                                                                                 }, 4000);
                                                                                                                                                                             }, 2000);
                                                                                                                                                                         }, 100);
@@ -655,7 +685,28 @@ document.addEventListener("DOMContentLoaded", function () {
                                                                                                 javiImage.src = "../images/FarWest/bar/rosa/javi_rosa.png";
                                                                                                 alejandroImage.src = "../images/FarWest/bar/alejandro_caminando.png";
                                                                                                 setTimeout(() => {
-
+                                                                                                    javiImage.src = "../images/FarWest/bar/rosa/javi_programacion.png";
+                                                                                                    setTimeout(() => {
+                                                                                                        javiImage.src = "../images/FarWest/bar/rosa/javi_rosa_llamando.png";
+                                                                                                        setTimeout(() => {
+                                                                                                            javiImage.src = "../images/FarWest/bar/rosa/javi_rosa_llamando2.png";
+                                                                                                            setTimeout(() => {
+                                                                                                                const robertoImage = document.createElement("img");
+                                                                                                                robertoImage.src = "../images/FarWest/bar/roberto.png";
+                                                                                                                robertoImage.id = "roberto";
+                                                                                                                robertoImage.style.position = "absolute";
+                                                                                                                robertoImage.style.right = "-100%";
+                                                                                                                robertoImage.style.top = "60%";
+                                                                                                                robertoImage.style.height = "420px";
+                                                                                                                robertoImage.style.transform = "translate(-50%, -50%)";
+                                                                                                                document.body.appendChild(robertoImage);
+                                                                                                                setTimeout(() => {
+                                                                                                                    robertoImage.style.transition = "right 5s ease";
+                                                                                                                    robertoImage.style.right = "50%";
+                                                                                                                }, 100);
+                                                                                                            }, 2000);
+                                                                                                        }, 2000);
+                                                                                                    }, 2000);
                                                                                                 }, 2000);
                                                                                             }
                                                                                             newOptions.style.display = "none";
