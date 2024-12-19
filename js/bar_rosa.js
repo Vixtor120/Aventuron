@@ -684,8 +684,6 @@ document.addEventListener("DOMContentLoaded", function () {
                                                                                             } else if (data === "programacion") {
                                                                                                 javiImage.src = "../images/FarWest/bar/rosa/javi_rosa.png";
                                                                                                 alejandroImage.src = "../images/FarWest/bar/alejandro_caminando.png";
-                                                                                                setTimeout(() => {
-                                                                                                    javiImage.src = "../images/FarWest/bar/rosa/javi_programacion.png";
                                                                                                     setTimeout(() => {
                                                                                                         javiImage.src = "../images/FarWest/bar/rosa/javi_rosa_llamando.png";
                                                                                                         setTimeout(() => {
@@ -711,23 +709,90 @@ document.addEventListener("DOMContentLoaded", function () {
                                                                                                                             setTimeout(() => {
                                                                                                                                 javiDestructor.src = "../images/FarWest/bar/javi_destructor_php.png";
                                                                                                                                 setTimeout(() => {
-                                                                                                                                    const php = document.createElement("img");
-                                                                                                                                    php.src = "../images/FarWest/bar/php.png";
-                                                                                                                                    php.id = "php";
-                                                                                                                                    php.style.position = "absolute";
-                                                                                                                                    php.style.right = "12%";
-                                                                                                                                    php.style.top = "60%";
-                                                                                                                                    php.style.zIndex = "0";
-                                                                                                                                    php.style.height = "100px";
-                                                                                                                                    php.style.transform = "translate(-50%, -50%)";
-                                                                                                                                    document.body.appendChild(php);
+                                                                                                                                    
+                                                                                                                                        const php = document.createElement("img");
+                                                                                                                                        php.src = "../images/FarWest/bar/php.png";
+                                                                                                                                        php.id = `php`; // Asignar un ID único a cada imagen
+                                                                                                                                        php.style.position = "absolute";
+                                                                                                                                        php.style.right = `30%`; // Desplazar cada imagen un poco
+                                                                                                                                        php.style.top = `60%`;    // Ajustar la posición para diferenciarlas
+                                                                                                                                        php.style.height = "40px";
+                                                                                                                                        php.style.left = `66%`;
+                                                                                                                                        document.body.appendChild(php);
+
+                                                                                                                                        const php2 = document.createElement("img");
+                                                                                                                                        php2.src = "../images/FarWest/bar/php.png";
+                                                                                                                                        php2.id = `php2`; // Asignar un ID único a cada imagen
+                                                                                                                                        php2.style.position = "absolute";
+                                                                                                                                        php2.style.right = `30%`; // Desplazar cada imagen un poco
+                                                                                                                                        php2.style.top = `65%`;    // Ajustar la posición para diferenciarlas
+                                                                                                                                        php2.style.height = "40px";
+                                                                                                                                        php2.style.left = `66%`;
+                                                                                                                                        document.body.appendChild(php2);
+                                                                                                                                    
                                                                                                                                     setTimeout(() => {
-                                                                                                                                        php.style.transition = "left 10s ease"; 
-                                                                                                                                        php.style.left = "150%"; 
-                                                                                                                                        php.addEventListener("transitionend", () => {
-                                                                                                                                            php.remove();
-                                                                                                                                        });
-                                                                                                                                    }, 2000);
+                                                                                                                                        php.style.transition = "left 10s ease";
+                                                                                                                                        php2.style.transition = "left 15s ease";
+                                                                                                                                        php.style.left = "-14%";
+                                                                                                                                        php2.style.left = "-14%";
+                                                                                                                                        
+                                                                                                                                        setTimeout(() => {
+                                                                                                                                            javiDestructor.src = "../images/FarWest/bar/javi_destructor_suelo.png";
+                                                                                                                                            setTimeout(() => {
+                                                                                                                                                javiDestructor.src = "../images/FarWest/bar/javi_destructor_gritando.png";
+                                                                                                                                                alejandroImage.src = "../images/FarWest/bar/alejandro_php.png";
+                                                                                                                                                setTimeout(() => {
+                                                                                                                                                    robertoImage.src = "../images/FarWest/bar/roberto_win.png";
+                                                                                                                                                    setTimeout(() => {
+                                                                                                                                                        javiImage.src = "../images/FarWest/bar/rosa/javi_rosa_win.png";
+                                                                                                                                                        setTimeout(() => {
+                                                                                                                                                            javiDestructor.src = "../images/FarWest/bar/javi_destructor_gritando.png";
+                                                                                                                                                            javiDestructor.style.transition = "left 5s ease";
+                                                                                                                                                            javiDestructor.style.left = "-100%";
+                                                                                                                                                            setTimeout(() => {
+                                                                                                                                                                alejandroImage.src = "../images/FarWest/bar/alejandro_adios.png";
+                                                                                                                                                                setTimeout(() => {
+                                                                                                                                                                    alejandroImage.style.transition = "left 5s ease";
+                                                                                                                                                                    alejandroImage.style.left = "-100%";
+                                                                                                                                                                    setTimeout(() => {
+                                                                                                                                                                        javiImage.src = "../images/FarWest/bar/rosa/javi_rosa_hacer.png";
+                                                                                                                                                                        setTimeout(() => {
+                                                                                                                                                                            robertoImage.src = "../images/FarWest/bar/roberto_adios.png";
+                                                                                                                                                                            setTimeout(() => {
+                                                                                                                                                                                javiImage.src = "../images/FarWest/bar/rosa/javi_rosa.png";
+                                                                                                                                                                                robertoImage.src = "../images/FarWest/bar/roberto.png";
+                                                                                                                                                                                setTimeout(() => {
+                                                                                                                                                                                    javiImage.style.transition = "right 10s ease";
+                                                                                                                                                                                    javiImage.style.right = "-100%";
+                                                                                                                                                                                    robertoImage.style.transition = "right 11s ease";
+                                                                                                                                                                                    robertoImage.style.right = "-100%";
+                                                                                                                                                                                    setTimeout(() => {
+                                                                                                                                                                                        const retireButton = document.createElement("button");
+                                                                                                                                                                                        retireButton.textContent = "Jubilarse";
+                                                                                                                                                                                        retireButton.style.position = "absolute";
+                                                                                                                                                                                        retireButton.style.top = "50%";
+                                                                                                                                                                                        retireButton.style.left = "50%";
+                                                                                                                                                                                        retireButton.style.transform = "translate(-50%, -50%)";
+                                                                                                                                                                                        retireButton.style.padding = "10px 20px";
+                                                                                                                                                                                        retireButton.style.fontSize = "16px";
+                                                                                                                                                                                        retireButton.style.cursor = "pointer";
+                                                                                                                                                                                        retireButton.addEventListener("click", () => {
+                                                                                                                                                                                            window.location.href = "../html/jubilarse.html";
+                                                                                                                                                                                        });
+                                                                                                                                                                                        document.body.appendChild(retireButton);
+                                                                                                                                                                                    }, 4000);
+                                                                                                                                                                                }, 4000);
+                                                                                                                                                                            }, 4000);
+                                                                                                                                                                        }, 4000);
+                                                                                                                                                                    }, 4000);
+                                                                                                                                                                }, 4000);
+                                                                                                                                                            }, 4000);
+                                                                                                                                                        }, 4000);
+                                                                                                                                                    }, 4000);
+                                                                                                                                                }, 4000);
+                                                                                                                                            }, 4000);
+                                                                                                                                        }, 4000); 
+                                                                                                                                    }, 4000);
                                                                                                                                 }, 4000);
                                                                                                                             }, 4000);
                                                                                                                         }, 4000);
@@ -736,7 +801,6 @@ document.addEventListener("DOMContentLoaded", function () {
                                                                                                             }, 4000);
                                                                                                         }, 4000);
                                                                                                     }, 4000);
-                                                                                                }, 2000);
                                                                                             }
                                                                                             newOptions.style.display = "none";
                                                                                         });
