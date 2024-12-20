@@ -113,10 +113,12 @@ function moveJaviToChair() {
     javiImage.addEventListener('transitionend', () => {
         javiImage.style.display = 'none';
         javiSentadoContainer.style.display = 'block';
+        javiSentado.style.width = '100%';
         javiSentado.style.display = 'block';
         chairImage.style.display = 'none';
         setTimeout(() => {
             javiSentado.style.display = 'none';
+            javiSentadoCharla1.style.width = '100%';
             javiSentadoCharla1.style.display = 'block';
             cafe2Container.style.display = 'block';
             setTimeout(() => {

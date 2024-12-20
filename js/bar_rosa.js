@@ -674,13 +674,166 @@ document.addEventListener("DOMContentLoaded", function () {
                                                                                             if (data === "spider-javi") {
                                                                                                 javiImage.src = "../images/FarWest/bar/rosa/javi_rosa.png";
                                                                                                 alejandroImage.src = "../images/FarWest/bar/alejandro_caminando.png";
-                                                                                                javiImage.style.transition = "left 8s ease";
-                                                                                                javiImage.style.left = "110%";
+                                                                                                javiImage.style.transition = "left 10s ease";
+                                                                                                javiImage.style.left = "120%";
+                                                                                                setTimeout(() => {
+                                                                                                    javiImage.src = "../images/FarWest/bar/spider_javi.png";
+                                                                                                    setTimeout(() => {
+                                                                                                        javiImage.style.transition = "left 10s ease";
+                                                                                                        javiImage.style.left = "64%";
+                                                                                                        setTimeout(() => {
+                                                                                                            javiDestructor.src = "../images/FarWest/bar/javi_destructor_firma.png";
+                                                                                                            setTimeout(() => {
+                                                                                                                javiImage.src = "../images/FarWest/bar/spider_javi_charla1.png";
+                                                                                                                setTimeout(() => {
+                                                                                                                    alejandroImage.src = "../images/FarWest/bar/alejandro_eso.png";
+                                                                                                                    setTimeout(() => {
+                                                                                                                        javiDestructor.src = "../images/FarWest/bar/javi_destructor_losiento.png";
+                                                                                                                        setTimeout(() => {
+                                                                                                                            javiDestructor.style.transition = "left 10s ease";
+                                                                                                                            javiDestructor.style.left = "-100%";
+                                                                                                                            setTimeout(() => {
+                                                                                                                                alejandroImage.src = "../images/FarWest/bar/alejandro_despedida.png";
+                                                                                                                                setTimeout(() => {
+                                                                                                                                    alejandroImage.style.transition = "left 10s ease";
+                                                                                                                                    alejandroImage.style.left = "-100%";
+                                                                                                                                    caballoVolador.style.transition = "opacity 2s ease";
+                                                                                                                                    caballoVolador.style.opacity = "0";
+                                                                                                                                    setTimeout(() => {
+                                                                                                                                        javiImage.src = "../images/FarWest/bar/spider_javi_charla2.png";
+                                                                                                                                        setTimeout(() => {
+                                                                                                                                            javiImage.src = "../images/FarWest/bar/spider_javi_jubilacion.png";
+                                                                                                                                            setTimeout(() => {
+                                                                                                                                                javiImage.src = "../images/FarWest/bar/spider_javi.png";
+                                                                                                                                                javiImage.style.transition = "left 10s ease";
+                                                                                                                                                javiImage.style.left = "-100%";
+                                                                                                                                                setTimeout(() => {
+                                                                                                                                                    const retireButton = document.createElement("button");
+                                                                                                                                                    retireButton.textContent = "Jubilarse";
+                                                                                                                                                    retireButton.style.position = "absolute";
+                                                                                                                                                    retireButton.style.top = "50%";
+                                                                                                                                                    retireButton.style.color = "red";
+                                                                                                                                                    retireButton.style.left = "50%";
+                                                                                                                                                    retireButton.style.transform = "translate(-50%, -50%)";
+                                                                                                                                                    retireButton.style.padding = "10px 20px";
+                                                                                                                                                    retireButton.style.fontSize = "16px";
+                                                                                                                                                    retireButton.style.cursor = "pointer";
+                                                                                                                                                    retireButton.addEventListener("click", () => {
+                                                                                                                                                        window.location.href = "../html/jubilarse.html";
+                                                                                                                                                    });
+                                                                                                                                                    document.body.appendChild(retireButton);
+                                                                                                                                                    setTimeout(() => {
+                                                                                                                                                        leftImage.style.transition = "left 4s";
+                                                                                                                                                        leftImage.style.left = "-100%";
+                                                                                                                                                        rightImage.style.transition = "right 4s";
+                                                                                                                                                        rightImage.style.right = "-100%";
+                                                                                                                                                    }, 4000);
+                                                                                                                                                }, 4000);
+                                                                                                                                            }, 4000);
+                                                                                                                                        }, 4000);
+                                                                                                                                    }, 4000);
+                                                                                                                                }, 4000);
+                                                                                                                            }, 4000);
+                                                                                                                        }, 4000);
+                                                                                                                    }, 4000);
+                                                                                                                }, 4000);
+                                                                                                            }, 4000);
+                                                                                                        }, 4000);
+                                                                                                    }, 4000);
+                                                                                                }, 5000);
                                                                                             } else if (data === "goku-javi") {
                                                                                                 javiImage.src = "../images/FarWest/bar/rosa/javi_rosa.png";
                                                                                                 alejandroImage.src = "../images/FarWest/bar/alejandro_caminando.png";
-                                                                                                javiImage.style.transition = "left 8s ease";
-                                                                                                javiImage.style.left = "110%";
+                                                                                                javiImage.style.transition = "left 10s ease";
+                                                                                                javiImage.style.left = "120%";
+                                                                                                setTimeout(() => {
+                                                                                                    javiImage.src = "../images/FarWest/bar/goku_javi.png";
+                                                                                                    setTimeout(() => {
+                                                                                                        javiImage.style.transition = "left 8s ease";
+                                                                                                        javiImage.style.left = "64%";
+                                                                                                        setTimeout(() => {
+                                                                                                            javiDestructor.src = "../images/FarWest/bar/javi_destructor_batman.png";
+                                                                                                            setTimeout(() => {
+                                                                                                                javiImage.src = "../images/FarWest/bar/goku_javi_charla1.png";
+                                                                                                                setTimeout(() => {
+                                                                                                                    const sonidoKamekameha = new Audio("../images/FarWest/bar/kamekameha.mp3");
+                                                                                                                    javiImage.src = "../images/FarWest/bar/goku_javi_kamekameha.png";
+                                                                                                                    sonidoKamekameha.play();
+                                                                                                                    setTimeout(() => {
+                                                                                                                        javiImage.src = "../images/FarWest/bar/goku_javi_poder.png"; 
+                                                                                                                        setTimeout(() => {
+                                                                                                                            javiImage.src = "../images/FarWest/bar/goku_javi.png";
+                                                                                                                            const kamekameha = document.createElement("img");
+                                                                                                                            kamekameha.src = "../images/FarWest/bar/kamekameha.png";
+                                                                                                                            kamekameha.id = `kamekameha`;
+                                                                                                                            kamekameha.style.position = "absolute";
+                                                                                                                            kamekameha.style.right = `30%`;
+                                                                                                                            kamekameha.style.top = `51%`;
+                                                                                                                            kamekameha.style.height = "120px";
+                                                                                                                            kamekameha.style.left = `54%`;
+                                                                                                                            document.body.appendChild(kamekameha);
+                                                                                                                            setTimeout(() => {
+                                                                                                                                kamekameha.style.transition = "left 10s ease";
+                                                                                                                                kamekameha.style.left = "-14%";
+                                                                                                                                setTimeout(() => {
+                                                                                                                                    javiDestructor.src = "../images/FarWest/bar/javi_destructor_suelo.png";
+                                                                                                                                    setTimeout(() => {
+                                                                                                                                        javiDestructor.src = "../images/FarWest/bar/javi_destructor_gritando.png";
+                                                                                                                                        alejandroImage.src = "../images/FarWest/bar/alejandro_bestia.png";
+                                                                                                                                        setTimeout(() => {
+                                                                                                                                            javiImage.src = "../images/FarWest/bar/goku_javi_jubilacion.png";
+                                                                                                                                            javiDestructor.style.transition = "left 10s ease";
+                                                                                                                                            javiDestructor.style.left = "-100%";
+                                                                                                                                            setTimeout(() => {
+                                                                                                                                                alejandroImage.src = "../images/FarWest/bar/alejandro_despedida.png";
+                                                                                                                                                setTimeout(() => {
+                                                                                                                                                    alejandroImage.style.transition = "left 10s ease";
+                                                                                                                                                    alejandroImage.style.left = "-100%";
+                                                                                                                                                    setTimeout(() => {
+                                                                                                                                                        caballoVolador.style.transition = "opacity 2s ease";
+                                                                                                                                                        caballoVolador.style.opacity = "0";
+                                                                                                                                                        setTimeout(() => {
+                                                                                                                                                            javiImage.style.transition = "left 10s ease";
+                                                                                                                                                            javiImage.style.left = "-100%";
+                                                                                                                                                            setTimeout(() => {
+                                                                                                                                                                caballoVolador.style.transition = "opacity 2s ease";
+                                                                                                                                                                caballoVolador.style.opacity = "0";
+                                                                                                                                                                const retireButton = document.createElement("button");
+                                                                                                                                                                retireButton.textContent = "Jubilarse";
+                                                                                                                                                                retireButton.style.position = "absolute";
+                                                                                                                                                                retireButton.style.top = "50%";
+                                                                                                                                                                retireButton.style.color = "red";
+                                                                                                                                                                retireButton.style.left = "50%";
+                                                                                                                                                                retireButton.style.transform = "translate(-50%, -50%)";
+                                                                                                                                                                retireButton.style.padding = "10px 20px";
+                                                                                                                                                                retireButton.style.fontSize = "16px";
+                                                                                                                                                                retireButton.style.cursor = "pointer";
+                                                                                                                                                                retireButton.addEventListener("click", () => {
+                                                                                                                                                                    window.location.href = "../html/jubilarse.html";
+                                                                                                                                                                });
+                                                                                                                                                                document.body.appendChild(retireButton);
+                                                                                                                                                                setTimeout(() => {
+                                                                                                                                                                    leftImage.style.transition = "left 4s";
+                                                                                                                                                                    leftImage.style.left = "-100%";
+                                                                                                                                                                    rightImage.style.transition = "right 4s";
+                                                                                                                                                                    rightImage.style.right = "-100%";
+                                                                                                                                                                }, 2000);
+                                                                                                                                                            }, 2000); 
+                                                                                                                                                        }, 2000);
+                                                                                                                                                    }, 2000);
+                                                                                                                                                }, 2000);
+                                                                                                                                            }, 4000);
+                                                                                                                                        }, 4000);
+                                                                                                                                    }, 4000);
+                                                                                                                                }, 4000);
+                                                                                                                            }, 4000);
+                                                                                                                        }, 4000);
+                                                                                                                    }, 4000);
+                                                                                                                }, 4000);
+                                                                                                            }, 4000);
+                                                                                                        }, 4000);
+                                                                                                    }, 4000);
+                                                                                                }, 4000);
                                                                                             } else if (data === "programacion") {
                                                                                                 javiImage.src = "../images/FarWest/bar/rosa/javi_rosa.png";
                                                                                                 alejandroImage.src = "../images/FarWest/bar/alejandro_caminando.png";
