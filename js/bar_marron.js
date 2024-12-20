@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const backgroundMusic = document.getElementById("background-music");
     const waiterImage = document.getElementById("camarero-jesus");
     const alejandroImage = document.getElementById("alejandro-caminando");
-    const javiImage = document.getElementById("javi-marron");
+    const javiImage = document.getElementById("javi");
     const options = document.getElementById("options");
     const chupito = document.getElementById("chupito");
     const cerveza = document.getElementById("cerveza");

@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const hamacaDerecha = document.getElementById("hamaca_derecha");
     const robertoJubilado = document.getElementById("roberto_jubilado");
     const javiJubilado = document.getElementById("javi_jubilado");
+    const victorCaminando = document.getElementById("victor_caminando");
 
     playaIzquierda.style.position = "absolute";
     playaIzquierda.style.left = "-50%";
@@ -47,6 +48,12 @@ document.addEventListener("DOMContentLoaded", function() {
     javiJubilado.style.opacity = "0";
     javiJubilado.style.transition = "right 6s, opacity 2s";
 
+    victorCaminando.style.position = "absolute";
+    victorCaminando.style.left = "-10%";
+    victorCaminando.style.bottom = "5%";
+    victorCaminando.style.width = "10%";
+    victorCaminando.style.transition = "left 6s";
+
     setTimeout(() => {
         playaIzquierda.style.left = "0";
         playaDerecha.style.right = "0";
@@ -79,6 +86,16 @@ document.addEventListener("DOMContentLoaded", function() {
         javiJubilado.src = "../images/paraiso/javi_jubilado_charla1.png";
         javiJubilado.style.width = "12%";
     }, 8200);
+
+    setTimeout(() => {
+        victorCaminando.style.left = "54%";
+    }, 6200);
+
+    setTimeout(() => {
+        victorCaminando.src = "../images/paraiso/victor_habla.png";
+        victorCaminando.style.width = "20%";
+    }, 10200);
+
 
     setTimeout(() => {
         robertoJubilado.src = "../images/paraiso/roberto_jubilado_charla1.png";
